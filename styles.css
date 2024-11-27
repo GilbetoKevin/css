@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.barra-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    padding-inline: 20px;
+}
+
+@media (max-width: 768px) {
+    .barra-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.accesos-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.accesos-nav li {
+    position: relative;
+    margin-right: 20px;
+    padding-inline: 10px;
+}
+
+.accesos-nav li:last-child {
+    margin-right: 0;
+}
+
+.accesos-nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.accesos-nav li a:hover {
+    color: #007bff;
+}
+
+.accesos-nav li::after {
+    content: '•';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    opacity: 50%;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon-button img {
+    height: 24px;
+    width: 24px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+    max-width: 60%;
+}
+
+.carousel h2, .carousel h3, .carousel p {
+    color: white;
+}
+
+.carousel h2 {
+    font-size: 75px;
+    font-family: Rubik;
+    font-weight: 700;
+}
+
+.carousel h3 {
+    font-size: 22px;
+    font-family: Rubik;
+    font-weight: 300;
+}
+
+.carousel p {
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.carousel-inner-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 90px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+    box-shadow: 3px 2px 2px rgb(126, 126, 126);
+    text-decoration: none;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.contenido {
+    text-align: center;
+    background: linear-gradient(to bottom, #221C3E 80%, #ffffff 80%);
+}
+
+.nuniatura {
+    font-size: 12px;
+    padding-top: 50px;
+    font-family: Rubik;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.suptitulo {
+    font-size: 40px;
+    font-family: Rubik;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-inline: 25%;
+}
+
+.container {
+    padding: 40px;
+    padding-inline: 20px;
+}
+
+.column {
+    border: solid 0px #464646;
+    box-shadow: 4px -5px 2px #362f59;
+    margin: 10px;
+    width: 220px;
+    height: 300px;
+    display: inline-block;
+    text-align: start;
+    background-color: #261E51;
+}
+
+.num p {
+    font-size: 65px;
+    font-family: Rubik;
+    font-weight: 800;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.target-continer {
+    padding-inline: 20px;
+    padding-top: 18px;
+}
+
+.target-continer h2 {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px -2px 2px #b8b8b8;
+}
+
+.target-continer p {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    line-height: 1.5;
+}
+
+.target-continer a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2792e3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(213, 213, 213);
+}
+
+a:active {
+    color: red;
+}
+
+.final {
+    padding-top: 100px;
+    height: 200px;
+    background-color: #f8f8f8;
+}
+
+.target-final {
+    border: solid 0px #464646;
+    box-shadow: 4px -5px 2px #362f59;
+    margin: 10px;
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    text-align: start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image1 {
+    background-image: url('imag/carrucel2.png');
+}
+
+.bg-image2 {
+    background-image: url('imag/carrucel3.jpg');
+}
+
+.target-continer-final {
+    margin: 30px;
+    color: white;
+    font-family: Rubik, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: 2px 1px 2px grey;
+}
+
+.target-continer-final h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.target-continer-final h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.target-continer-final p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
